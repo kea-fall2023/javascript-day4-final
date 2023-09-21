@@ -1,6 +1,7 @@
 
 import { SERVER_URL } from "../../settings.js"
 
+//const cachedCars = []
 
 export async function initAllCars() {
   console.log("initAllCars")

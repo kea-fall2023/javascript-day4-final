@@ -3,6 +3,7 @@ import { loadHtml, renderHtml } from "./utils.js"
 
 import {initAllCars} from "./pages/allCars/allCars.js"
 import {initFindCar} from "./pages/findCar/findCar.js"
+import {initAddCar} from "./pages/addCar/initAddCar.js"
 
 window.addEventListener("load", async () => {
     const templateAbout = await loadHtml("./pages/about.html")
@@ -34,7 +35,7 @@ window.addEventListener("load", async () => {
         }
         if (target.id === "menu-btn-add") {
             renderHtml(templateAdd, "content")
-            //Run JS
+            initAddCar()
         }
         if (target.id === "menu-btn-edit") {
             renderHtml(templateEdit, "content")
